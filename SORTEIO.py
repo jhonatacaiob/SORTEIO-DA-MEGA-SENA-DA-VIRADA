@@ -29,6 +29,3 @@ rc = ", ".join(result_cres)
 
 #IMPRESSÃO DOS NUMEROS PARA O USUÁRIO
 print("Os numeros sorteados foram %s, PARABENS AOS GANHADORES" %(rc))
-
-
-#PEGA PORRA, CONSEGUI SEUS ARROMBADO
