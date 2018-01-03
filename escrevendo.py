@@ -4,6 +4,6 @@ def cadastramento():
     informaçoes = open("informaçoes.csv", 'a')
     texto = ""
     texto = '%s: %s'%(NomeJogador, apostas)
+    texto = texto + '\n'
     informaçoes.write(texto)
-    informaçoes.write("\n")
     informaçoes.close()

@@ -1,5 +1,6 @@
 def cadastramento2():
     from CARTELAS3 import cadastramento1
+    from conversao import conversao
     NomeJogador = input("Qual seu nome?: ")
     preco = 0
     total = []
@@ -37,13 +38,14 @@ def cadastramento2():
         elif Apostas == 15:
             preco += 17517.5
             total += [preco]
-        print("Sr(a). %s, vocÃª apostou nos numeros %s" %(NomeJogador, printavel))
-        print("Essa aposta deu R$:",preco)
+        print("Sr(a). %s, você apostou nos numeros %s" %(NomeJogador, printavel))
+        preco1 = conversao(sum(total))
+        print("Essa aposta deu R$:",preco1)
         todas_apostas += [printavel]
         preco = 0
         comece = input("gostaria de jogar novamente?: ")
     else:
-        print("Pague R$:",sum(total),"antes de sair")
-        print("OBRIGADO POR USAR NOSSOS SERVIÃ‡OS")
+        print("Pague R$:",preco1,"antes de sair")
+        print("OBRIGADO POR USAR NOSSOS SERVIÇOS")
     apostas = '|'.join(todas_apostas)
     return apostas, NomeJogador

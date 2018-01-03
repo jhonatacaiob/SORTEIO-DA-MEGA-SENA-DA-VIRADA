@@ -19,17 +19,18 @@ def cadastramento1():
 
 
     #AQUI VAI COMEÇAR O CODIGO
-    Apostas = int(input("Quantos numeros voce quer apostar?: "))
-    if Apostas < 6 or Apostas > 15:
-        print("Jogada Inválida, escolha um numero de 6 a 15")
-
-    else:
-        ok = teste(Apostas)
-        okp = []
-        for j in range(1,61):
-            for i in ok:
-                if j == i:
-                    i = str(i)
-                    okp += [i] 
-        printavel = ",".join(okp)
+    while True:
+        Apostas = int(input("Quantos numeros voce quer apostar?: "))
+        if Apostas < 6 or Apostas > 15:
+            print("Jogada Inválida, escolha um numero de 6 a 15")
+        else:
+            ok = teste(Apostas)
+            okp = []
+            for j in range(1,61):
+                for i in ok:
+                    if j == i:
+                        i = str(i)
+                        okp += [i] 
+            printavel = ",".join(okp)
+            break
     return printavel, Apostas

@@ -1,10 +1,8 @@
 #DECLARÇÃO DAS VARIAVEIS
 from random import randint
 resultado = []
-vezes = int ( input ( "Quantos números você quer sortear?: " ) )
-#vezes = 6
-
-
+#vezes = int ( input ( "Quantos números você quer sortear?: " ) )
+vezes = 6
 
 
 #SELEÇÃO DOS NUMEROS ALEATÓRIOS
@@ -19,7 +17,6 @@ while len(resultado) < vezes:
 
 
 #FORMATAÇÃO DOS NUMEROS EM ORDEM CRESCENTE
-
 result_cres = []
 for i in range(1,61):
     for r in resultado:
